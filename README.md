@@ -1,5 +1,28 @@
-# creditas-ruby-challenge
+# Creditas Ruby Challenge
 
-This repo is based in [challenge](https://github.com/Creditas/challenge/blob/master/backend/code-challenges/ruby/README.md)
+This repo is based in [creditas challenge](https://github.com/Creditas/challenge/blob/master/backend/code-challenges/ruby/README.md)
 
-Install deps: `gem install bundler && bundle install`. Run `bundle exec rake` to run the tests, or `bundle exec rake run` to run the program.
+# README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+- Ruby version
+
+- System dependencies
+
+- Configuration
+
+- Database creation
+
+- Database initialization
+
+- How to run the test suite
+
+- Services (job queues, cache servers, search engines, etc.)
+
+- Deployment instructions
+
+- ...
