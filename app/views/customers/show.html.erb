@@ -13,4 +13,41 @@
                   } %></li>
 </ul>
 
+<h2>Loans</h2>
+<% @customer.loans.each do |loan| %>
+  <p>
+    <strong>Client:</strong>
+    <%= loan.client %>
+  </p>
+
+  <p>
+    <strong>Type:</strong>
+    <%= loan.loan_type %>
+  </p>
+
+  <p>
+    <strong>Taxes:</strong>
+    <%= loan.taxes %>
+  </p>
+<% end %>
+
+<h2>Add a loan:</h2>
+<%= form_with model: [ @customer, @customer.loans.build ] do |form| %>
+  <p>
+    <%= form.label :client %><br>
+    <%= form.text_field :client %>
+  </p>
+  <p>
+    <%= form.label :loan_type %><br>
+    <%= form.text_field :loan_type %>
+  </p>
+  <p>
+    <%= form.label :taxes %><br>
+    <%= form.text_field :taxes, type: :number %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
+
 <%= link_to "Voltar", customers_path %>
