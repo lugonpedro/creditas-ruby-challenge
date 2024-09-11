@@ -1,0 +1,16 @@
+<h1><%= @customer.name %></h1>
+
+<p><%= @customer.cpf %></p>
+<p><%= @customer.age %></p>
+<p><%= @customer.location %></p>
+<p><%= @customer.income %></p>
+
+<ul>
+  <li><%= link_to "Edit", edit_customer_path(@customer) %></li>
+  <li><%= link_to "Destroy", customer_path(@customer), data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Are you sure?"
+                  } %></li>
+</ul>
+
+<%= link_to "Voltar", customers_path %>
